@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Varanda {
     Loading loading = new Loading();
 
-    public void Iniciar() {
+    public boolean Iniciar() {
         loading.Iniciar();
         LimparConsole limpar = new LimparConsole();
         limpar.limparConsole();
@@ -95,5 +95,6 @@ public class Varanda {
 
         System.out.println("\nVocê se afasta da varanda, levando consigo novas hipóteses sobre a fuga do assassino...");
         System.out.println("---------------------------------------------------------------------------------------");
+        return examinouPegadas;
     }
 }

@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Quarto {
     Loading loading = new Loading();
 
-    public void Iniciar() {
+    public boolean Iniciar() {
         loading.Iniciar();
         LimparConsole limpar = new LimparConsole();
         limpar.limparConsole();
@@ -80,5 +80,6 @@ public class Quarto {
 
         System.out.println("\nVocê sai do quarto, levando consigo o peso da cena e a nova pista crucial.");
         System.out.println("---------------------------------------------------------------------------------------");
+        return examinouPano;
     }
 }

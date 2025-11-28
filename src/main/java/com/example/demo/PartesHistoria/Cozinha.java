@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Cozinha {
     Loading loading = new Loading();
 
-    public void Iniciar() {
+    public boolean Iniciar() {
         loading.Iniciar();
         LimparConsole limpar = new LimparConsole();
         limpar.limparConsole();
@@ -93,5 +93,6 @@ public class Cozinha {
 
         System.out.println("\nVocê sai da cozinha, levando consigo as lembranças e suspeitas do que viu ali...");
         System.out.println("---------------------------------------------------------------------------------------");
+        return pegouTacaComPo;
     }
 }
